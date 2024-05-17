@@ -6,15 +6,6 @@ function prisonerCircleMaker(nbr) {
     return outputArray;
 }
 
-function killSelector(nbrLeftPrisoner, nthPrisonnerKill) {
-    if (nbrLeftPrisoner < nthPrisonnerKill) {
-        nthPrisonnerKill -= nbrLeftPrisoner;
-        return killSelector(nbrLeftPrisoner, nthPrisonnerKill);
-    } else {
-        return nthPrisonnerKill;
-    }
-}
-
 function josephus(circlePrisonerSize, killOrder) {
     let prisonnerLeftArray = prisonerCircleMaker(circlePrisonerSize);
     let currentIndex = 0;
