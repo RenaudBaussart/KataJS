@@ -1,6 +1,6 @@
 function prisonerCircleMaker(nbr) {
     let outputArray = [];
-    for (let i = 1; i <= nbr; i++)
+    for (let i = 1; i <= nbr; i++){
         outputArray.push(i);
     }
     return outputArray;
