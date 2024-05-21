@@ -8,5 +8,10 @@ makeNegative(0);    // return 0
 makeNegative(0.12); // return -0.12
 */
 function makeNegative(num) {
-    return num -= num * 2;
-  }
+    if(num > 0){
+      return num -= num * 2;
+    }
+    else{
+      return num
+    }
+    }
